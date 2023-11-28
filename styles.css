@@ -44,23 +44,28 @@
 
   .container {
     margin : 2%;
-    display: flex;
+    display: grid;
     justify-content: space-around;
-    flex-flow: wrap;
-    align-items: stretch;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    grid-template-columns: auto auto;
   }
 /* Block - Structure */
   .card {
-    padding: 2%;
+    padding: 5%;
+    margin: 5%;
+    box-shadow: 5px 5px 8px var(--mid-blue), 10px 10px 8px var(--lavendar), 15px 15px 8px var(--gold);
   }
 
-  .card:nth-child(2n+1){
+  .card:nth-child(1){
     rotate: 5deg;
   }
-  .card:nth-child(2n+2) {
-    rotate: -5deg;
+  .card:nth-child(2) {
+    rotate: -8deg;
+  }
+  .card:nth-child(3){
+    rotate: -8deg;
+  }
+  .card:nth-child(4) {
+    rotate: 5deg;
   }
 /* Block - Skins */
   .card-darker-blue {
@@ -78,10 +83,16 @@
     color: var(--darker-blue);
   }
 
+  .card-coconut {
+    background-color: var(--coconut);
+    color: var(--mid-blue);
+  }
+
 /*Element - Stucture*/
   .card__image {
     margin: 3% auto;
     border: 5px solid;
+    border-radius: 15%;
   }
 
 /*Element - Skins*/
