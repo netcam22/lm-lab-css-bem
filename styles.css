@@ -38,11 +38,68 @@
     --gold: rgb(239,185,72);
   }
 
-  body {
-    background-color: var(--cream);
+/* Font: Star Wars Kit[Font]
+"https://www.fontspace.com/star-wars-kit-font-f33062"
+Accessed 29/11/23 */
+  @font-face {
+    font-family: "Star-Wars-Kit";
+    src: url("./fonts/StarwarsKit.ttf");
+  }
+  
+  /* Font: D Poly Imperial[Font]
+"https://www.fontspace.com/dpoly-imperial-font-f218702"
+Accessed 29/11/23 */
+@font-face {
+    font-family: "D-Poly";
+    src: url("./fonts/DpolyImperial.ttf");
+  }
+    /* Font: Mandalorian[Font]
+"https://www.fontspace.com/mandalorian-font-f14708"
+Accessed 29/11/23 */
+@font-face {
+    font-family: "Mandalorian";
+    src: url("./fonts/Mandalorian.ttf");
+  }
+      /* Font: Star Killer[Font]
+"https://www.fontspace.com/starkiller-font-f35874"
+Accessed 29/11/23 */
+@font-face {
+    font-family: "Star-Killer";
+    src: url("./fonts/Starkiller.ttf");
+  }
+@font-face {
+    font-family: "Star-Killer-Outline";
+    src: url("./fonts/StarkillerOutline.ttf");
+  }
+  @font-face {
+    font-family: "Star-Killer-Italic";
+    src: url("./fonts/StarkillerItalic.ttf");
+  }
+  @font-face {
+    font-family: "Star-Killer--Outline-Italic";
+    src: url("./fonts/StarkillerOutlineItalic.ttf");
   }
 
-  .container {
+  .page {
+    background-image: url("./images/space.png");
+  }
+
+  .page__heading {
+    font-family: "Star-Killer-Outline";
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .page__heading--dark {
+    color: var(--dark-blue);
+  }
+
+  .page__heading--light {
+    color: var(--silver);
+  }
+
+  .page__container {
     margin : 2%;
     display: grid;
     justify-content: space-around;
