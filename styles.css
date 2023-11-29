@@ -80,6 +80,38 @@ Accessed 29/11/23 */
     src: url("./fonts/StarkillerOutlineItalic.ttf");
   }
 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .navbar__list {
+    list-style: none;
+    display: flex;
+  }
+
+  .navbar-light {
+    background-color: var(--silver);
+    font-family: "Star-Killer";
+  }
+
+ .navbar__list li {
+    margin: 0;
+    padding: 0;
+  }
+
+ .navbar__list li+li {
+    margin-left: 2rem;
+  }
+
+ .navbar__list a {
+    text-decoration: none;
+    color: var(--dark-blue);
+  }
+
   .page {
     background-image: url("./images/space.png");
   }
@@ -105,6 +137,22 @@ Accessed 29/11/23 */
     justify-content: space-around;
     grid-template-columns: auto auto;
   }
+
+  .planet {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("./images/planet.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 0;
+    padding-bottom: 100%;
+  }
+
 /* Block - Structure */
   .card {
     padding: 5%;
