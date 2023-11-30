@@ -120,12 +120,7 @@ Accessed 29/11/23 */
     text-decoration: none;
     font-size: 1.2rem;
     color: var(--darker-blue);
-  }
-
-  .navbar-light:hover {
-    font-family: "Galactic-Basic";
-    background-color: var(--gold);
-  }
+ }
 
   .page {
     background-color: var(--darker-blue);
@@ -176,10 +171,10 @@ Accessed 29/11/23 */
   .card-coconut {
     background-image: url("../images/planet.png");
   }
-  .card-noodles {
+  .card-gold {
     background-image: url("../images/planet.png");
   }
-  .card-violet{
+  .card-night {
     background-image: url("../images/planet.png");
   }
   
@@ -199,11 +194,11 @@ Accessed 29/11/23 */
 .card__image-coconut {
   border-color: var(--coconut);
 }
-.card__image-noodles {
-    border-color: var(--noodles);
+.card__image-gold {
+    border-color: var(--gold);
 }
-.card__image-violet {
-    border-color: var(--violet);
+.card__image-night {
+    border-color: var(--night);
 }
 
 .card__text {
@@ -213,7 +208,7 @@ Accessed 29/11/23 */
   border-radius: 15%;
   width: 80%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.7rem;
   border: 1px solid var(--gold);
   box-shadow: 5px 5px 8px var(--mid-blue), 10px 10px 8px var(--lavendar), 15px 15px 8px var(--gold);
   cursor: pointer;
@@ -250,13 +245,13 @@ Accessed 29/11/23 */
   background: var(--coconut);
   color: var(--darker-blue);
 }
-.card__heading-noodles , .card__text-noodles{
-  background: var(--noodles);
-  color: var(--violet);
+.card__heading-gold , .card__text-gold {
+  background: var(--gold);
+  color: var(--darker-blue);
 }
-.card__heading-violet, .card__text-violet {
-  background: var(--violet);
-  color: var(--noodles);
+.card__heading-night, .card__text-night {
+  background: var(--night);
+  color: var(--gold);
 }
 
 @media (min-width: 600px) {
@@ -305,9 +300,15 @@ Accessed 29/11/23 */
   .card:nth-child(4) {
     rotate: 5deg;
   }
-  .card__heading {
+  .card__heading{
     margin: 2% auto;
     padding: 1%;
-    width: 80%
+    width: 70%;
+  }
+
+  .card__text {
+    margin: 2% auto;
+    padding: 1%;
+    width: 70%;
   }
 }
