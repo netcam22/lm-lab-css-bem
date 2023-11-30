@@ -149,6 +149,7 @@ Accessed 29/11/23 */
 
   .page__container {
     margin : 2%;
+    padding: 0;
     display: grid;
     justify-content: space-around;
     grid-template-columns: auto;
@@ -184,7 +185,7 @@ Accessed 29/11/23 */
     margin: 3% auto;
     border: 5px solid;
     border-radius: 15%;
-    width: 90%;
+    width: 80%;
   }
 
 /*Element - Skins*/
@@ -204,9 +205,9 @@ Accessed 29/11/23 */
 .card__text {
   margin: 3% auto;
   padding: 1%;
-  border: 5px solid;
   border-radius: 15%;
-  width: 80%;
+  width: 100%;
+  height: max-content;
   text-align: center;
   font-size: 1.7rem;
   border: 1px solid var(--gold);
@@ -215,25 +216,21 @@ Accessed 29/11/23 */
 }
 
 .card__heading {
+  position: relative;
   margin: 3% auto;
   padding: 1%;
   border: 1px solid var(--gold);
   border-radius: 15%;
   width: 100%;
+  height: max-content;
   text-align: center;
   font-size: 2.5rem;
   box-shadow: 5px 5px 8px var(--mid-blue), 10px 10px 8px var(--lavendar), 15px 15px 8px var(--gold);
   cursor: pointer;
 }
 
-.card__text:hover, .card__text:focus {
-  font-family: "Star-Killer";
-  height: max-content;
-}
-
-.card__heading:hover, .card__heading:focus {
-  font-family: "Star-Killer";
-  height: max-content;
+.card__text:hover, .card__heading:hover {
+  font-family: "Star-Killer";;
 }
 
 /*Element - Skins*/
@@ -284,31 +281,31 @@ Accessed 29/11/23 */
   }
 
   .page__container {
-    grid-template-columns: auto auto;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 
   .card:nth-child(1) {
-    rotate: 8deg;
+    rotate: 6deg;
   }
 
   .card:nth-child(2) {
-    rotate: -8deg;
+    rotate: -6deg;
   }
   .card:nth-child(3){
-    rotate: -8deg;
+    rotate: -6deg;
   }
   .card:nth-child(4) {
-    rotate: 5deg;
+    rotate: 6deg;
   }
   .card__heading{
     margin: 2% auto;
     padding: 1%;
-    width: 70%;
+    width: 80%;
   }
 
   .card__text {
     margin: 2% auto;
     padding: 1%;
-    width: 70%;
+    width: 80%;
   }
 }
