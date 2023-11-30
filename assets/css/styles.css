@@ -93,6 +93,7 @@ Accessed 29/11/23 */
     margin: 0;
     flex-wrap: wrap;
     justify-content: center;
+    display: none;
   }
 
   .navbar__list {
@@ -257,6 +258,7 @@ Accessed 29/11/23 */
     justify-content: space-between;
     flex-wrap: unset;
     width: 100%;
+    display: flex;
   }
 
   .navbar__list {
