@@ -111,7 +111,7 @@ Accessed 29/11/23 */
     font-family: "Star-Killer";
   }
 
- .navbar__list li {
+  .navbar__list li {
     margin: 0;
     padding: 0;
   }
@@ -157,32 +157,27 @@ Accessed 29/11/23 */
 
 /* Block - Structure */
   .card {
-    position: absolute;
+    position: relative;
     width: 94%;
-    left: 3%;
+    margin: 7% 3%;
     background-size: contain;
     background-repeat: no-repeat;
     font-family: "Galactic-Basic";
   }
 
   .card:nth-child(1){
-    margin-top: 10%;
     background-image: url("../images/planet.png");
     color: var(--lavendar);
   }
   .card:nth-child(2) {
-    margin-top: 220%;
     background-image: url("../images/planet.png");
     color: var(--gold);
   }
   .card:nth-child(3){
-    margin-top: 460%;
     background-image: url("../images/planet.png");
     color: var(--noodles);
   }
   .card:nth-child(4) {
-    margin-top: 670%;
-    padding-bottom: 15%;
     background-image: url("../images/planet.png");
     color: var(--coconut);
   }
@@ -279,25 +274,20 @@ Accessed 29/11/23 */
 
   .card:nth-child(1) {
     rotate: 8deg;
-    left: 0;
-    width: 50%;
-    margin-top: 5%;
   }
 
   .card:nth-child(2) {
     rotate: -8deg;
-    left: 45%;
-    width: 60%;
-    margin-top: 5%;
   }
   .card:nth-child(3){
     rotate: -8deg;
-    left: 0;
-    margin-top: 50%;
   }
   .card:nth-child(4) {
     rotate: 5deg;
-    left: 50%;
-    margin-top: 55%;
+  }
+  .card__heading {
+    margin: 2% auto;
+    padding: 1%;
+    width: 60%;
   }
 }
