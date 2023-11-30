@@ -5,53 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
 </head>
 
 <body class = "page">
-    <nav class = "navbar navbar-light">
-        <ul class = "navbar__list">
-            <li><a href="#">item 1</a></li>
-            <li><a href="#">item 2</a></li>
+    <nav class = "navbar">
+        <i class="fa-solid fa-bars"></i>
+        <ul class = "navbar__list navbar-light">
+            <li><a href="#">The Dark Side</a></li>
+            <li><a href="#">The Force</a></li>
+            <li><a href="#">item 3</a></li>
             <li><a href="#">item 3</a></li>
         </ul>
     </nav>
     <h1 class = "page__heading page__heading--light">Bem Wars</h1>
+    <h2 class = "page__sub-heading page__sub-heading--light">A long time ago in a galaxy far, far away....</h2>
     <section class="page__container">
         <div class = "card card-darker-blue">
-            <h2>The Dark Side</h2>
-            <img class = "card__image card__image-cream" src="./images/vader.jpeg">
-            <p>Nesting!</p>
-            <p>Conflict!</p>
-            <p>Specificity Wars!</p>
-            <p>Cookies</p>
+            <h2 class = "card__heading">The Dark Side</h2>
+            <img class = "card__image card__image-cream" src="./assets/images/vader.jpeg">
+            <p class = "card__text">Nesting!</p>
+            <p class = "card__text">Conflict!</p>
+            <p class = "card__text">Specificity Wars!</p>
+            <p class = "card__text">Cookies</p>
         </div>
 
         <div class = "card card-noodles">
-            <h2>The Force</h2>
-            <img class = "card__image card__image-blue" src="./images/yoda.jpeg">
-            <p>Love</p>
-            <p>Beauty</p>
-            <p>CSS that Scales!</p>
-            <p>Great warrior. Wars not make one great!</p>
+            <h2 class = "card__heading">The Force</h2>
+            <img class = "card__image card__image-blue" src="./assets/images/yoda.jpeg">
+            <p class = "card__text">Love</p>
+            <p class = "card__text">Beauty</p>
+            <p class = "card__text">CSS that Scales!</p>
+            <p class = "card__text">Great warrior. Wars not make one great!</p>
         </div>
         <div class = "card card-gold">
-            <h2>The Dark Side</h2>
-            <img class = "card__image card__image-blue" src="./images/vader.jpeg">
-            <p>Nesting!</p>
-            <p>Conflict!</p>
-            <p>Specificity Wars!</p>
-            <p>Cookies</p>
+            <h2 class = "card__heading">The Dark Side</h2>
+            <img class = "card__image card__image-blue" src="./assets/images/vader.jpeg">
+            <p class = "card__text">Nesting!</p>
+            <p class = "card__text">Conflict!</p>
+            <p class = "card__text">Specificity Wars!</p>
+            <p class = "card__text">Cookies</p>
         </div>
 
         <div class = "card card-coconut">
-            <h2>The Force</h2>
-            <img class = "card__image card__image-violet" src="./images/yoda.jpeg">
-            <p>Love</p>
-            <p>Beauty</p>
-            <p>CSS that Scales!</p>
-            <p>Great warrior. Wars not make one great!</p>
+            <h2 class = "card__heading">The Force</h2>
+            <img class = "card__image card__image-violet" src="./assets/images/yoda.jpeg">
+            <p class = "card__text">Love</p>
+            <p class = "card__text">Beauty</p>
+            <p class = "card__text">CSS that Scales!</p>
+            <p class = "card__text">Great warrior. Wars not make one great!</p>
         </div>
     </section>
 </body>
