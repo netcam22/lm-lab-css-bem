@@ -229,12 +229,12 @@ Accessed 29/11/23 */
   cursor: pointer;
 }
 
-.card__text:hover {
+.card__text:hover, .card__text:focus {
   font-family: "Star-Killer";
   height: max-content;
 }
 
-.card__heading:hover {
+.card__heading:hover, .card__heading:focus {
   font-family: "Star-Killer";
   height: max-content;
 }
@@ -288,6 +288,6 @@ Accessed 29/11/23 */
   .card__heading {
     margin: 2% auto;
     padding: 1%;
-    width: 60%;
+    width: 80%
   }
 }
