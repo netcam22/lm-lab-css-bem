@@ -1,0 +1,145 @@
+  /* Card */
+
+  /*Card Block */
+
+  .card {
+    position: relative;
+    width: 94%;
+    margin: 7% 3%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 992px) {
+    .card:nth-child(1) {
+        rotate: -4deg;
+      }
+      .card:nth-child(2) {
+        rotate: 4deg;
+      }
+      .card:nth-child(3) {
+        rotate: 4deg;
+      }
+      .card:nth-child(4) {
+        rotate: -4deg;
+      }
+  }
+
+  /*Card Block--modifiers */
+
+  .card--planet{
+    background-image: url("../images/planet.png");
+    font-family: "Galactic-Basic";
+  }
+
+  .card--planet:hover{
+    font-family: "Star-Killer";;
+  }
+
+  /*Card Block__Elements*/
+
+  .card__image {
+    margin: 3% auto;
+    border: 5px solid;
+    border-radius: 15%;
+    width: 80%;
+  }
+
+  .card__text {
+    margin: 3% auto;
+    padding: 1%;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .card__heading {
+    position: relative;
+    margin: 3% auto;
+    padding: 1%;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  .card__button {
+    margin: 3% 25%;
+    padding: 1%;
+    width: 50%;
+    height: max-content;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  @media (min-width: 992px) {
+    .card__heading{
+        margin: 2% auto;
+        padding: 1%;
+        width: 80%;
+        font-size: 2rem;
+      }
+    
+      .card__text {
+        margin: 2% auto;
+        padding: 1%;
+        width: 80%;
+        font-size: 1.6rem;
+      }
+}
+
+  /* Block__Element--modifiers */
+
+  .card__image-darker--blue {
+    border-color: var(--darker-blue);
+  }
+  .card__image--coconut {
+  border-color: var(--coconut);
+  }
+  .card__image--gold {
+    border-color: var(--gold);
+  }
+  .card__image--night {
+    border-color: var(--night);
+  }
+
+  .card__heading--gold-shadow-border, .card__text--gold-shadow-border, .card__button--gold-shadow-border{
+    border: 1px solid var(--gold);
+    box-shadow: 5px 5px 8px var(--mid-blue), 10px 10px 8px var(--lavendar), 15px 15px 8px var(--gold);
+    border-radius: 15%;
+  }
+
+  .card__heading--darker-blue, .card__text--darker-blue {
+    background-color: var(--darker-blue);
+    color: var(--coconut);
+  }
+  .card__heading--coconut, .card__text--coconut {
+    background: var(--coconut);
+    color: var(--darker-blue);
+  }
+  .card__heading--gold , .card__text--gold {
+    background: var(--gold);
+    color: var(--darker-blue);
+  }
+  .card__heading--night, .card__text--night {
+    background: var(--night);
+    color: var(--gold);
+  }
+
+  .card__button--fire {
+    background: var(--fire);
+  }
+  .card__button--force {
+    background: var(--noodles);
+  }
+  .card__button--noodles {
+    background: var(--silver);
+  }
+
+  .card__button--lavendar {
+    background: var(--lavendar);
+  }
