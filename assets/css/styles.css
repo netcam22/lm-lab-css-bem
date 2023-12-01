@@ -342,12 +342,20 @@ Accessed 29/11/23 */
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 
-  .card:nth-child(odd) {
+  .card:nth-child(1) {
     rotate: -4deg;
   }
 
-  .card:nth-child(even) {
+  .card:nth-child(2) {
     rotate: 4deg;
+  }
+
+  .card:nth-child(3) {
+    rotate: 4deg;
+  }
+
+  .card:nth-child(4) {
+    rotate: -4deg;
   }
 
   .card__heading{
