@@ -1,0 +1,115 @@
+      /*Navigation*/
+
+   /*Navigation Block*/
+
+  .navbar {
+    position: sticky;
+    align-items: left;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1000;
+    max-height:fit-content;
+  }
+
+  @media (min-width: 992px) {
+    .navbar {
+        flex-wrap: unset;
+        width: 100%;
+        display: flex;
+      }
+  }
+
+ /*Navigation Block--modifier */
+
+  .navbar--light {
+    background-color: var(--silver);
+  }
+   
+   /*Navigation Block__Elements */
+
+   .navbar__list {
+    list-style: none;
+    flex-direction: column;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1000;
+    padding: 1%;
+    display: none;
+    width: 100%;
+  }
+
+  .navbar__item {
+    margin: 0 2%;
+    padding: 0;
+  }
+
+  .navbar__anchor {
+    text-decoration: none;
+    font-size: 1.2rem;
+    word-break:keep-all;
+    cursor: pointer;
+  }
+
+  .navbar__element {
+    margin: 0 2% 0 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    float: right;
+    font-size: 3rem;
+    cursor: pointer;
+    line-height: 3.6rem;
+  }
+
+  .navbar__element:hover .navbar__list {
+    display: flex;
+  }
+
+  @media (min-width: 992px) {
+    
+    .navbar__list {
+        flex-direction: row;
+        position: relative;
+        width: 100%;
+        justify-content:space-evenly;
+        padding: 0 0 1% 0;
+        display: flex;
+      }
+      .navbar__anchor {
+        font-size: 1.5rem;
+      }
+      .navbar__item {
+        padding: 0;
+      }
+      .navbar__element {
+        width: 100%;
+      }
+}
+  
+  /*Navigation Block__Element--modifiers */
+
+  .navbar__list--light {
+    background-color: var(--silver);
+    font-family: "Star-Killer";
+  }
+
+  .navbar__element--burger {
+    font-family: "Galactic-Basic";
+    color: var(--silver);
+  }
+
+  .navbar__anchor--dark {
+    color: var(--darker-blue);
+  }
+
+  .navbar__anchor--dark:hover {
+    color: var(--gold);
+  }
+
+@media (min-width: 992px) {
+    .navbar__element--burger {
+        display: none;
+      }
+}

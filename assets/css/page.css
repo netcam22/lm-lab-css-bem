@@ -1,0 +1,72 @@
+  /* Page */
+
+  /*Page Block */
+
+  .page {
+    margin:0;
+    padding: 0;
+  }
+
+  /*Page Block__Modifier */
+
+  .page--space {
+    background-color: var(--darker-blue);
+    background-image: url("../images/space.png");
+  }
+
+   /*Page Block__Elements */
+
+  .page__heading {
+    font-size: 3.5rem;
+    line-height: 3.6rem;
+    text-align: left;
+    margin: 2% 2% 2% 5%;
+  }
+
+  .page__sub-heading {
+    font-size: 1.3rem;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .page__container {
+    margin : 2%;
+    padding: 0;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto;
+    position: relative;
+  }
+
+@media (min-width: 768px) {
+    .page__container {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .page__heading {
+        text-align: center;
+        font-size: 5rem;
+        margin: 2% 0;
+    }
+    
+    .page__sub-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+}
+
+   /*Page Block__Element--modifiers */
+
+  .page__heading--gold {
+    color: var(--gold);
+    font-family: "Star-Killer-Outline";
+  }
+  
+  .page__sub-heading--lavendar {
+    font-family: "Star-Killer";
+    color: var(--lavendar);
+  }
+
