@@ -88,25 +88,32 @@ Accessed 29/11/23 */
   }
 
   .navbar {
-    display: flex;
+    position: sticky;
     align-items: left;
     margin: 0;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: 1000;
+    max-height:fit-content;
+  }
+
+  .navbar--light {
+    background-color: var(--silver);
   }
 
   .navbar__list {
     list-style: none;
-    display: flex;
     flex-direction: column;
     position: fixed;
     top:0;
     left: 0;
     z-index: 1000;
-    padding: 4%;
+    padding: 1%;
+    display: none;
+    width: 100%;
   }
 
-  .navbar-light {
+  .navbar__list--light {
     background-color: var(--silver);
     font-family: "Star-Killer";
   }
@@ -120,26 +127,32 @@ Accessed 29/11/23 */
     text-decoration: none;
     font-size: 1.2rem;
     color: var(--darker-blue);
+    word-break:keep-all;
+    cursor: pointer;
  }
 
  .navbar__list a:hover {
   color: var(--gold);
  }
 
-.navbar__list a:hover {
-  color: var(--gold);
- }
-
- .nav-bars {
-  margin: 0 2%;
+ .navbar__bars {
+  margin: 0 2% 0 0;
   padding: 0;
-  font-family: "Galactic-Basic";
   display: flex;
-  color: var(--coconut);
   position: relative;
   float: right;
-  font-size: 3rem;;
+  font-size: 3rem;
+  cursor: pointer;
 }
+
+.navbar__bars--burger {
+  font-family: "Galactic-Basic";
+  color: var(--silver);
+}
+
+ .navbar__bars:hover .navbar__list {
+  display: flex;
+ }
 
   .page {
     background-color: var(--darker-blue);
@@ -147,8 +160,9 @@ Accessed 29/11/23 */
   }
 
   .page__heading {
-    font-size: 3rem;
-    text-align: center;
+    font-size: 3.5rem;
+    text-align: left;
+    margin-left: 5%;
   }
 
   .page__heading--gold {
@@ -157,8 +171,9 @@ Accessed 29/11/23 */
   }
 
   .page__sub-heading {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.3rem;
+    text-align: left;
+    margin-left: 5%;
   }
 
   .page__sub-heading--lavendar {
@@ -228,7 +243,7 @@ Accessed 29/11/23 */
   width: 100%;
   height: max-content;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   border: 1px solid var(--gold);
   box-shadow: 5px 5px 8px var(--mid-blue), 10px 10px 8px var(--lavendar), 15px 15px 8px var(--gold);
   cursor: pointer;
@@ -243,7 +258,7 @@ Accessed 29/11/23 */
   width: 100%;
   height: max-content;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   box-shadow: 5px 5px 8px var(--mid-blue), 10px 10px 8px var(--lavendar), 15px 15px 8px var(--gold);
   cursor: pointer;
 }
@@ -270,7 +285,17 @@ Accessed 29/11/23 */
   color: var(--gold);
 }
 
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
+    .page__container {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+
+  .page__heading {
+    text-align: center;
+  }
 
   .navbar {
     flex-wrap: unset;
@@ -283,43 +308,48 @@ Accessed 29/11/23 */
     position: relative;
     width: 100%;
     justify-content:space-evenly;
-    padding: 1% 3%;
+    padding: 0 0 1% 0;
+    display: flex;
   }
 
   .navbar__list a{
     font-size: 1.5rem;
   }
 
-  .nav-bars {
-    display: none;
+  .navbar__list li{
+    padding: 0;
   }
 
+  .navbar__bars {
+    width: 100%;
+}
+
+.navbar__bars--burger {
+  display: none;
+}
+
   .page__heading {
-    font-size: 7rem;
-    margin-top: 1%;
+    font-size: 5rem;
+    margin-top: 0%;
 }
 
   .page__sub-heading {
     font-size: 2rem;
+    text-align: center;
   }
 
   .page__container {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 
-  .card:nth-child(1) {
-    rotate: 6deg;
+  .card:nth-child(odd) {
+    rotate: -4deg;
   }
 
-  .card:nth-child(2) {
-    rotate: -6deg;
+  .card:nth-child(even) {
+    rotate: 4deg;
   }
-  .card:nth-child(3){
-    rotate: -6deg;
-  }
-  .card:nth-child(4) {
-    rotate: 6deg;
-  }
+
   .card__heading{
     margin: 2% auto;
     padding: 1%;
