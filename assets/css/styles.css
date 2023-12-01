@@ -86,7 +86,7 @@ Accessed 29/11/23 */
     font-family: "Star-Killer--Outline-Italic";
     src: url("../fonts/StarkillerOutlineItalic.ttf");
   }
-
+   /* Block*/
   .navbar {
     position: sticky;
     align-items: left;
@@ -96,11 +96,11 @@ Accessed 29/11/23 */
     z-index: 1000;
     max-height:fit-content;
   }
-
+ /* Block--modifier */
   .navbar--light {
     background-color: var(--silver);
   }
-
+   /* Block__Element */
   .navbar__list {
     list-style: none;
     flex-direction: column;
@@ -112,18 +112,13 @@ Accessed 29/11/23 */
     display: none;
     width: 100%;
   }
-
-  .navbar__list--light {
-    background-color: var(--silver);
-    font-family: "Star-Killer";
-  }
-
-  .navbar__list li {
+  
+  .navbar__item {
     margin: 0 2%;
     padding: 0;
   }
 
- .navbar__list a {
+ .navbar__anchor {
     text-decoration: none;
     font-size: 1.2rem;
     color: var(--darker-blue);
@@ -131,7 +126,7 @@ Accessed 29/11/23 */
     cursor: pointer;
  }
 
- .navbar__list a:hover {
+ .navbar__anchor:hover {
   color: var(--gold);
  }
 
@@ -143,45 +138,53 @@ Accessed 29/11/23 */
   float: right;
   font-size: 3rem;
   cursor: pointer;
+  line-height: 3.6rem;
 }
 
-.navbar__bars--burger {
-  font-family: "Galactic-Basic";
-  color: var(--silver);
-}
+  /* Block__Element--modifier */
+  .navbar__list--light {
+    background-color: var(--silver);
+    font-family: "Star-Killer";
+  }
 
- .navbar__bars:hover .navbar__list {
-  display: flex;
- }
+  .navbar__bars--burger {
+    font-family: "Galactic-Basic";
+    color: var(--silver);
+  }
+  .navbar__bars:hover .navbar__list {
+    display: flex;
+  }
 
+
+/* Block */
   .page {
     background-color: var(--darker-blue);
     background-image: url("../images/space.png");
   }
-
+   /* Block__Element */
   .page__heading {
     font-size: 3.5rem;
     line-height: 3.6rem;
     text-align: left;
     margin: 2% 2% 2% 5%;
   }
-
+   /* Block__Element--modifier */
   .page__heading--gold {
     color: var(--gold);
     font-family: "Star-Killer-Outline";
   }
-
+   /* Block__Element */
   .page__sub-heading {
     font-size: 1.3rem;
     text-align: left;
     margin-left: 5%;
   }
-
+   /* Block__Element--modifier */
   .page__sub-heading--lavendar {
     font-family: "Star-Killer";
     color: var(--lavendar);
   }
-
+ /* Block__Element */
   .page__container {
     margin : 2%;
     padding: 0;
@@ -191,7 +194,7 @@ Accessed 29/11/23 */
     position: relative;
   }
 
-/* Block - Structure */
+/* Block */
   .card {
     position: relative;
     width: 94%;
@@ -201,21 +204,16 @@ Accessed 29/11/23 */
     font-family: "Galactic-Basic";
   }
 
-  .card-darker-blue{
-    background-image: url("../images/planet.png");
+  .card:hover{
+    font-family: "Star-Killer";;
   }
-  .card-coconut {
-    background-image: url("../images/planet.png");
-  }
-  .card-gold {
-    background-image: url("../images/planet.png");
-  }
-  .card-night {
-    background-image: url("../images/planet.png");
-  }
-  
 
-/*Element - Stucture*/
+  /* Block--modifier */
+  .card--planet{
+    background-image: url("../images/planet.png");
+  }
+
+  /* Block__Element*/
   .card__image {
     margin: 3% auto;
     border: 5px solid;
@@ -223,20 +221,20 @@ Accessed 29/11/23 */
     width: 80%;
   }
 
-/*Element - Skins*/
-.card__image-darker-blue {
+ /* Block__Element--modifier */
+.card__image-darker--blue {
     border-color: var(--darker-blue);
 }
-.card__image-coconut {
+.card__image--coconut {
   border-color: var(--coconut);
 }
-.card__image-gold {
+.card__image--gold {
     border-color: var(--gold);
 }
-.card__image-night {
+.card__image--night {
     border-color: var(--night);
 }
-
+ /* Block__Element */
 .card__text {
   margin: 3% auto;
   padding: 1%;
@@ -249,7 +247,7 @@ Accessed 29/11/23 */
   box-shadow: 5px 5px 8px var(--mid-blue), 10px 10px 8px var(--lavendar), 15px 15px 8px var(--gold);
   cursor: pointer;
 }
-
+ /* Block__Element */
 .card__heading {
   position: relative;
   margin: 3% auto;
@@ -263,47 +261,57 @@ Accessed 29/11/23 */
   box-shadow: 5px 5px 8px var(--mid-blue), 10px 10px 8px var(--lavendar), 15px 15px 8px var(--gold);
   cursor: pointer;
 }
-
-.card:hover{
-  font-family: "Star-Killer";;
+ /* Block__Element */
+.card__button {
+  margin: 3% auto;
+  padding: 1%;
+  border-radius: 15%;
+  width: 100%;
+  height: max-content;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 1px solid var(--gold);
+  box-shadow: 5px 5px 8px var(--mid-blue), 10px 10px 8px var(--lavendar), 15px 15px 8px var(--gold);
+  cursor: pointer;
 }
 
-/*Element - Skins*/
-.card__heading-darker-blue, .card__text-darker-blue {
+ /* Block__Element--modifier */
+.card__heading--darker-blue, .card__text--darker-blue {
   background-color: var(--darker-blue);
   color: var(--coconut);
 }
-.card__heading-coconut, .card__text-coconut {
+.card__heading--coconut, .card__text--coconut {
   background: var(--coconut);
   color: var(--darker-blue);
 }
-.card__heading-gold , .card__text-gold {
+.card__heading--gold , .card__text--gold {
   background: var(--gold);
   color: var(--darker-blue);
 }
-.card__heading-night, .card__text-night {
+.card__heading--night, .card__text--night {
   background: var(--night);
   color: var(--gold);
 }
 
   @media (min-width: 768px) {
+     /* Block__Element */
     .page__container {
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     }
 }
 
 @media (min-width: 992px) {
-
+   /* Block__Element */
   .page__heading {
     text-align: center;
   }
-
+   /* Block */
   .navbar {
     flex-wrap: unset;
     width: 100%;
     display: flex;
   }
-
+   /* Block__Element */
   .navbar__list {
     flex-direction: row;
     position: relative;
@@ -312,28 +320,27 @@ Accessed 29/11/23 */
     padding: 0 0 1% 0;
     display: flex;
   }
-
-  .navbar__list a{
+   /* Block__Element */
+  .navbar__anchor {
     font-size: 1.5rem;
   }
-
-  .navbar__list li{
+   /* Block__Element */
+  .navbar__item {
     padding: 0;
   }
-
+   /* Block__Element */
   .navbar__bars {
     width: 100%;
 }
-
+ /* Block__Element--modifier */
 .navbar__bars--burger {
   display: none;
 }
-
+ /* Block__Element */
   .page__heading {
     font-size: 5rem;
     margin: 2% 0;
 }
-
   .page__sub-heading {
     font-size: 2rem;
     text-align: center;
@@ -358,7 +365,7 @@ Accessed 29/11/23 */
   .card:nth-child(4) {
     rotate: -4deg;
   }
-
+ /* Block__Element */
   .card__heading{
     margin: 2% auto;
     padding: 1%;
@@ -368,6 +375,13 @@ Accessed 29/11/23 */
 
   .card__text {
     margin: 2% auto;
+    padding: 1%;
+    width: 80%;
+    font-size: 1.6rem;
+  }
+
+  .card__button {
+    margin: 2% 10%;
     padding: 1%;
     width: 80%;
     font-size: 1.6rem;
