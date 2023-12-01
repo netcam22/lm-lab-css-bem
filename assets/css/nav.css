@@ -38,6 +38,8 @@
     padding: 1%;
     display: none;
     width: 100%;
+    margin: 0;
+    line-height: 1.8rem;
   }
 
   .navbar__item {
