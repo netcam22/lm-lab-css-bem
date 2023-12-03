@@ -74,7 +74,6 @@
     .navbar__list {
         flex-direction: row;
         position: relative;
-        width: 100%;
         justify-content:space-evenly;
         padding: 0 0 1% 0;
         display: flex;

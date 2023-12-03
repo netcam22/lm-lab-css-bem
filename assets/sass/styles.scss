@@ -22,37 +22,37 @@ Accessed 29/11/23 */
     src: url("../fonts/StarwarsKit.ttf");
   }
   
-  /* Font: D Poly Imperial[Font]
-"https://www.fontspace.com/dpoly-imperial-font-f218702"
-Accessed 29/11/23 */
-@font-face {
-    font-family: "D-Poly";
-    src: url("../fonts/DpolyImperial.ttf");
+    /* Font: D Poly Imperial[Font]
+  "https://www.fontspace.com/dpoly-imperial-font-f218702"
+  Accessed 29/11/23 */
+  @font-face {
+      font-family: "D-Poly";
+      src: url("../fonts/DpolyImperial.ttf");
+    }
+      /* Font: Mandalorian[Font]
+  "https://www.fontspace.com/mandalorian-font-f14708"
+  Accessed 29/11/23 */
+  @font-face {
+      font-family: "Mandalorian";
+      src: url("../fonts/Mandalorian.ttf");
+    }
+        /* Font: Galactic Basic[Font]
+  "https://www.dafont.com/galactic-basic.font"
+  Accessed 30/11/23 */
+  @font-face {
+    font-family: "Galactic-Basic";
+    src: url("../fonts/galbasic.ttf");
   }
-    /* Font: Mandalorian[Font]
-"https://www.fontspace.com/mandalorian-font-f14708"
-Accessed 29/11/23 */
-@font-face {
-    font-family: "Mandalorian";
-    src: url("../fonts/Mandalorian.ttf");
+        /* Font: Star Killer[Font]
+  "https://www.fontspace.com/starkiller-font-f35874"
+  Accessed 29/11/23 */
+  @font-face {
+      font-family: "Star-Killer";
+      src: url("../fonts/Starkiller.ttf");
   }
-      /* Font: Galactic Basic[Font]
-"https://www.dafont.com/galactic-basic.font"
-Accessed 30/11/23 */
-@font-face {
-  font-family: "Galactic-Basic";
-  src: url("../fonts/galbasic.ttf");
-}
-      /* Font: Star Killer[Font]
-"https://www.fontspace.com/starkiller-font-f35874"
-Accessed 29/11/23 */
-@font-face {
-    font-family: "Star-Killer";
-    src: url("../fonts/Starkiller.ttf");
-  }
-@font-face {
-    font-family: "Star-Killer-Outline";
-    src: url("../fonts/StarkillerOutline.ttf");
+  @font-face {
+      font-family: "Star-Killer-Outline";
+      src: url("../fonts/StarkillerOutline.ttf");
   }
   @font-face {
     font-family: "Star-Killer-Italic";
@@ -64,11 +64,11 @@ Accessed 29/11/23 */
   }
 
   @mixin respond-medium {
-    @media (min-width: 768px) { @content }
+    @media (min-width: 768px) { @content };
   }
 
   @mixin respond-large {
-    @media (min-width: 992px) { @content }
+    @media (min-width: 992px) { @content };
   }
 
   @mixin gold-shadow {
@@ -98,17 +98,17 @@ Accessed 29/11/23 */
   }
 
   %card-content {
-      position: relative;
-      margin: 3% auto;
-      padding: 1%;
-      width: 100%;
-      height: max-content;
-      text-align: center;
-      cursor: pointer;
+    position: relative;
+    margin: 3% auto;
+    padding: 1%;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    cursor: pointer;
 
-      @include respond-large { 
-        margin: 2% auto;
-        width: 80%;
-      }
+    @include respond-large { 
+      margin: 2% auto;
+      width: 80%;
+    }
   }
 
