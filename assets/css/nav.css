@@ -74,16 +74,12 @@
     .navbar__list {
         flex-direction: row;
         position: relative;
-        width: 100%;
         justify-content:space-evenly;
         padding: 0 0 1% 0;
         display: flex;
       }
       .navbar__anchor {
         font-size: 1.5rem;
-      }
-      .navbar__item {
-        padding: 0;
       }
       .navbar__element {
         width: 100%;

@@ -80,14 +80,12 @@
   @media (min-width: 992px) {
     .card__heading{
         margin: 2% auto;
-        padding: 1%;
         width: 80%;
         font-size: 2rem;
       }
     
       .card__text {
         margin: 2% auto;
-        padding: 1%;
         width: 80%;
         font-size: 1.6rem;
       }
@@ -95,10 +93,6 @@
       .card__image {
         display: block;
         width: 80%;
-      }
-
-      .card__button {
-        font-size: 1.2rem;
       }
 }
 
