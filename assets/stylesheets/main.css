@@ -1,0 +1,372 @@
+:root {
+  --coconut: rgb(235,236,247);
+  --silver: rgb(235,236,245);
+  --lavendar: rgb(174,177,215);
+  --violet: rgb(113,119,186);
+  --mid-blue: rgb(52,60,156);
+  --dark-blue: rgb(36,42,109);
+  --darker-blue: rgb(26,30,78);
+  --night: rgb(8,8,24);
+  --cream: rgb(253,248,237);
+  --noodles: rgb(249,227,182);
+  --straw: rgb(244,206,127);
+  --gold: rgb(239,185,72);
+  --fire: rgb(244, 132, 40);
+}
+
+/* Font: Star Wars Kit[Font]
+"https://www.fontspace.com/star-wars-kit-font-f33062"
+Accessed 29/11/23 */
+@font-face {
+  font-family: "Star-Wars-Kit";
+  src: url("../fonts/StarwarsKit.ttf");
+}
+/* Font: D Poly Imperial[Font]
+"https://www.fontspace.com/dpoly-imperial-font-f218702"
+Accessed 29/11/23 */
+@font-face {
+  font-family: "D-Poly";
+  src: url("../fonts/DpolyImperial.ttf");
+}
+/* Font: Mandalorian[Font]
+"https://www.fontspace.com/mandalorian-font-f14708"
+Accessed 29/11/23 */
+@font-face {
+  font-family: "Mandalorian";
+  src: url("../fonts/Mandalorian.ttf");
+}
+/* Font: Galactic Basic[Font]
+"https://www.dafont.com/galactic-basic.font"
+Accessed 30/11/23 */
+@font-face {
+  font-family: "Galactic-Basic";
+  src: url("../fonts/galbasic.ttf");
+}
+/* Font: Star Killer[Font]
+"https://www.fontspace.com/starkiller-font-f35874"
+Accessed 29/11/23 */
+@font-face {
+  font-family: "Star-Killer";
+  src: url("../fonts/Starkiller.ttf");
+}
+@font-face {
+  font-family: "Star-Killer-Outline";
+  src: url("../fonts/StarkillerOutline.ttf");
+}
+@font-face {
+  font-family: "Star-Killer-Italic";
+  src: url("../fonts/StarkillerItalic.ttf");
+}
+@font-face {
+  font-family: "Star-Killer--Outline-Italic";
+  src: url("../fonts/StarkillerOutlineItalic.ttf");
+}
+.navbar {
+  position: sticky;
+  align-items: left;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1000;
+  max-height: fit-content;
+}
+@media (min-width: 992px) {
+  .navbar {
+    flex-wrap: unset;
+    width: 100%;
+    display: flex;
+  }
+}
+.navbar--light {
+  background-color: var(--silver);
+}
+.navbar__list {
+  list-style: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1%;
+  display: none;
+  width: 100%;
+  margin: 0;
+  line-height: 1.8rem;
+}
+@media (min-width: 992px) {
+  .navbar__list {
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0 0 1% 0;
+    display: flex;
+  }
+}
+.navbar__list--light {
+  background-color: var(--silver);
+  font-family: "Star-Killer";
+}
+.navbar__item {
+  margin: 0 2%;
+  padding: 0;
+}
+.navbar__anchor {
+  text-decoration: none;
+  font-size: 1.2rem;
+  word-break: keep-all;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .navbar__anchor {
+    font-size: 1.5rem;
+  }
+}
+.navbar__anchor--dark {
+  color: var(--darker-blue);
+}
+.navbar__anchor--dark:hover {
+  color: var(--gold);
+}
+.navbar__element {
+  margin: 0 2% 0 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  float: right;
+  font-size: 3rem;
+  cursor: pointer;
+  line-height: 3.6rem;
+}
+@media (min-width: 992px) {
+  .navbar__element {
+    width: 100%;
+  }
+}
+.navbar__element--burger {
+  font-family: "Galactic-Basic";
+  color: var(--silver);
+}
+@media (min-width: 992px) {
+  .navbar__element--burger {
+    display: none;
+  }
+}
+.navbar__element:hover .navbar__list {
+  display: flex;
+}
+
+.page {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+.page--space {
+  background-color: var(--darker-blue);
+  background-image: url("../images/space.png");
+}
+.page__heading {
+  font-size: 3.5rem;
+  line-height: 3.6rem;
+  text-align: left;
+  margin: 2% 2% 2% 5%;
+}
+@media (min-width: 992px) {
+  .page__heading {
+    text-align: center;
+    font-size: 5rem;
+    margin: 2% 0;
+  }
+}
+.page__heading--gold {
+  color: var(--gold);
+  font-family: "Star-Killer-Outline";
+}
+.page__sub-heading {
+  font-size: 1.3rem;
+  text-align: left;
+  margin-left: 5%;
+}
+@media (min-width: 992px) {
+  .page__sub-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+.page__sub-heading--lavendar {
+  font-family: "Star-Killer";
+  color: var(--lavendar);
+}
+.page__container {
+  margin: 2%;
+  padding: 0;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: minmax(0, 1fr);
+  position: relative;
+}
+@media (min-width: 768px) {
+  .page__container {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+.card {
+  position: relative;
+  width: 94%;
+  margin: 7% 3%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (min-width: 992px) {
+  .card:nth-child(1) {
+    rotate: -4deg;
+  }
+  .card:nth-child(2) {
+    rotate: 4deg;
+  }
+  .card:nth-child(3) {
+    rotate: 4deg;
+  }
+  .card:nth-child(4) {
+    rotate: -4deg;
+  }
+}
+.card--planet {
+  background-image: url("../images/planet.png");
+  font-family: "Galactic-Basic";
+}
+.card--planet:hover {
+  font-family: "Star-Killer";
+}
+.card__image {
+  margin: 3% auto;
+  border: 5px solid;
+  border-radius: 15%;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .card__image {
+    display: block;
+    width: 80%;
+  }
+}
+.card__image-darker--blue {
+  border-color: var(--darker-blue);
+}
+.card__image--coconut {
+  border-color: var(--coconut);
+}
+.card__image--gold {
+  border-color: var(--gold);
+}
+.card__image--night {
+  border-color: var(--night);
+}
+.card__text {
+  margin: 3% auto;
+  padding: 1%;
+  width: 100%;
+  height: max-content;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .card__text {
+    margin: 2% auto;
+    width: 80%;
+    font-size: 1.6rem;
+  }
+}
+.card__text--gold-shadow-border {
+  border: 1px solid var(--gold);
+  box-shadow: 5px 5px 8px var(--mid-blue), 10px 10px 8px var(--lavendar), 15px 15px 8px var(--gold);
+  border-radius: 15%;
+}
+.card__text--darker-blue {
+  background-color: var(--darker-blue);
+  color: var(--coconut);
+}
+.card__text--coconut {
+  background: var(--coconut);
+  color: var(--darker-blue);
+}
+.card__text--gold {
+  background: var(--gold);
+  color: var(--darker-blue);
+}
+.card__text--night {
+  background: var(--night);
+  color: var(--gold);
+}
+.card__heading {
+  position: relative;
+  margin: 3% auto;
+  padding: 1%;
+  width: 100%;
+  height: max-content;
+  text-align: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .card__heading {
+    margin: 2% auto;
+    width: 80%;
+    font-size: 2rem;
+  }
+}
+.card__heading--gold-shadow-border {
+  border: 1px solid var(--gold);
+  box-shadow: 5px 5px 8px var(--mid-blue), 10px 10px 8px var(--lavendar), 15px 15px 8px var(--gold);
+  border-radius: 15%;
+}
+.card__heading--darker-blue {
+  background-color: var(--darker-blue);
+  color: var(--coconut);
+}
+.card__heading--coconut {
+  background: var(--coconut);
+  color: var(--darker-blue);
+}
+.card__heading--gold {
+  background: var(--gold);
+  color: var(--darker-blue);
+}
+.card__heading--night {
+  background: var(--night);
+  color: var(--gold);
+}
+.card__button {
+  margin: 3% 25%;
+  padding: 1%;
+  width: 50%;
+  height: max-content;
+  text-align: center;
+  font-size: 1.2rem;
+  font: inherit;
+  cursor: pointer;
+}
+.card__button--gold-shadow-border {
+  border: 1px solid var(--gold);
+  box-shadow: 5px 5px 8px var(--mid-blue), 10px 10px 8px var(--lavendar), 15px 15px 8px var(--gold);
+  border-radius: 15%;
+}
+.card__button--fire {
+  background: var(--fire);
+}
+.card__button--force {
+  background: var(--noodles);
+}
+.card__button--noodles {
+  background: var(--silver);
+}
+.card__button--lavendar {
+  background: var(--lavendar);
+}
+
+/*# sourceMappingURL=main.css.map */
