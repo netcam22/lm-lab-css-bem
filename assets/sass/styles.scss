@@ -97,3 +97,18 @@ Accessed 29/11/23 */
     color: var(--gold);
   }
 
+  %card-content {
+      position: relative;
+      margin: 3% auto;
+      padding: 1%;
+      width: 100%;
+      height: max-content;
+      text-align: center;
+      cursor: pointer;
+
+      @include respond-large { 
+        margin: 2% auto;
+        width: 80%;
+      }
+  }
+

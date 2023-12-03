@@ -61,6 +61,22 @@ Accessed 29/11/23 */
   font-family: "Star-Killer--Outline-Italic";
   src: url("../fonts/StarkillerOutlineItalic.ttf");
 }
+.card__text, .card__heading {
+  position: relative;
+  margin: 3% auto;
+  padding: 1%;
+  width: 100%;
+  height: max-content;
+  text-align: center;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .card__text, .card__heading {
+    margin: 2% auto;
+    width: 80%;
+  }
+}
+
 .navbar {
   position: sticky;
   align-items: left;
@@ -266,57 +282,11 @@ Accessed 29/11/23 */
 .card__image--night {
   border-color: var(--night);
 }
-.card__text {
-  margin: 3% auto;
-  padding: 1%;
-  width: 100%;
-  height: max-content;
-  text-align: center;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-@media (min-width: 992px) {
-  .card__text {
-    margin: 2% auto;
-    width: 80%;
-    font-size: 1.6rem;
-  }
-}
-.card__text--gold-shadow-border {
-  border: 1px solid var(--gold);
-  box-shadow: 5px 5px 8px var(--mid-blue), 10px 10px 8px var(--lavendar), 15px 15px 8px var(--gold);
-  border-radius: 15%;
-}
-.card__text--darker-blue {
-  background-color: var(--darker-blue);
-  color: var(--coconut);
-}
-.card__text--coconut {
-  background: var(--coconut);
-  color: var(--darker-blue);
-}
-.card__text--gold {
-  background: var(--gold);
-  color: var(--darker-blue);
-}
-.card__text--night {
-  background: var(--night);
-  color: var(--gold);
-}
 .card__heading {
-  position: relative;
-  margin: 3% auto;
-  padding: 1%;
-  width: 100%;
-  height: max-content;
-  text-align: center;
   font-size: 1.4rem;
-  cursor: pointer;
 }
 @media (min-width: 992px) {
   .card__heading {
-    margin: 2% auto;
-    width: 80%;
     font-size: 2rem;
   }
 }
@@ -338,6 +308,35 @@ Accessed 29/11/23 */
   color: var(--darker-blue);
 }
 .card__heading--night {
+  background: var(--night);
+  color: var(--gold);
+}
+.card__text {
+  font-size: 1.2rem;
+}
+@media (min-width: 992px) {
+  .card__text {
+    font-size: 1.6rem;
+  }
+}
+.card__text--gold-shadow-border {
+  border: 1px solid var(--gold);
+  box-shadow: 5px 5px 8px var(--mid-blue), 10px 10px 8px var(--lavendar), 15px 15px 8px var(--gold);
+  border-radius: 15%;
+}
+.card__text--darker-blue {
+  background-color: var(--darker-blue);
+  color: var(--coconut);
+}
+.card__text--coconut {
+  background: var(--coconut);
+  color: var(--darker-blue);
+}
+.card__text--gold {
+  background: var(--gold);
+  color: var(--darker-blue);
+}
+.card__text--night {
   background: var(--night);
   color: var(--gold);
 }
